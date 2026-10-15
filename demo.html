@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>批注测试页 · Browser Annotation Test Target</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background: #f5f6f8; color: #1f1f1f; }
+    .page { max-width: 720px; margin: 0 auto; padding: 24px 16px 120px; }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    .sub { color: #6b7280; font-size: 13px; margin-bottom: 20px; }
+    .card { background: #fff; border-radius: 14px; padding: 18px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .card h2 { font-size: 16px; margin: 0 0 10px; }
+    .row { display: flex; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid #f0f0f0; }
+    .row:first-of-type { border-top: none; }
+    .avatar { width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, #f6d365, #fda085); flex: none; }
+    .name { font-weight: 600; font-size: 14px; }
+    .meta { color: #8a8f99; font-size: 12px; margin-top: 2px; }
+    .tag { display: inline-block; background: #eef2ff; color: #4f46e5; border-radius: 6px; padding: 2px 8px; font-size: 12px; margin-right: 6px; }
+    .btn { border: none; border-radius: 999px; padding: 8px 18px; font-size: 13px; cursor: pointer; }
+    .btn.primary { background: #2D7FF9; color: #fff; }
+    .btn.ghost { background: #f3f4f6; color: #374151; }
+    .price { color: #ED7044; font-weight: 600; }
+    .quote { color: #4b5563; font-size: 13.5px; line-height: 1.7; background: #f9fafb; border-radius: 10px; padding: 12px 14px; }
+    .actions { display: flex; gap: 10px; margin-top: 12px; }
+    footer { color: #9ca3af; font-size: 12px; text-align: center; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>批注测试页</h1>
+    <p class="sub">在 DSH 浏览器侧边栏打开本页，点击视口右上角「✏️ 批注」后：悬停高亮元素、点击钉元素、拖动选区域、按住空格操作页面。</p>
+
+    <div class="card" id="poi-card">
+      <h2>悦庭·岭南小馆 <span class="price">¥268/人</span></h2>
+      <div class="row">
+        <div class="avatar"></div>
+        <div>
+          <div class="name">静安寺 · 4.7 分</div>
+          <div class="meta">包间 6–10 人 · 环境安静 · 桌距宽</div>
+        </div>
+      </div>
+      <div class="row">
+        <span class="tag">安静包间</span><span class="tag">宴请评价集中</span><span class="tag">可订 19:30</span>
+      </div>
+      <blockquote class="quote">“6 人包间很安静，服务节奏稳，谈事情不会被打扰。” —— 小鹿吃上海</blockquote>
+      <div class="actions">
+        <button class="btn primary">订座</button>
+        <button class="btn ghost">电话</button>
+        <button class="btn ghost">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>第二个卡片</h2>
+      <p class="meta">用于验证多个批注编号 ①②③ 的累计，以及页面滚动后蓝点是否跟随元素。</p>
+    </div>
+
+    <div class="card">
+      <h2>长内容撑出滚动</h2>
+      <p class="meta" style="height:600px">向下滚动页面，已钉的批注蓝点应跟随元素一起移动。</p>
+    </div>
+
+    <footer>annotation test target</footer>
+  </div>
+</body>
+</html>

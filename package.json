@@ -1,0 +1,33 @@
+{
+  "name": "@local/dsh-browser-annotation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json"
+  ],
+  "meta": {
+    "title": "Browser Annotation",
+    "description": "Point at browser page elements, attach comments, and send them to the agent."
+  }
+}
